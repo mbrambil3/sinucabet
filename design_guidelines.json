@@ -1,0 +1,173 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "SnookerBet P2P",
+      "persona": "E1: The Anti-AI Designer",
+      "vibe": "The Gentlemen's Terminal - A fusion of dimly lit snooker halls and high-frequency fintech trading desks.",
+      "principles": [
+        "Fusion: Classic Green Felt meets Cyberpunk Neon.",
+        "Tension: High contrast, deep shadows, spotlight focus.",
+        "Texture: Grain, velvet, and glass over flat colors.",
+        "Data-First: Betting is serious; numbers must be legible and beautiful."
+      ]
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Oswald, sans-serif",
+        "body": "Manrope, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "weights": {
+        "headings": "500 (Medium) to 700 (Bold)",
+        "body": "400 (Regular) to 600 (SemiBold)"
+      },
+      "usage": {
+        "h1": "text-6xl font-bold tracking-tight uppercase text-white",
+        "h2": "text-4xl font-semibold tracking-tight text-white/90",
+        "h3": "text-2xl font-medium text-emerald-400",
+        "body": "text-base text-zinc-400 leading-relaxed",
+        "caption": "text-xs font-mono tracking-wider text-zinc-600 uppercase"
+      },
+      "import_url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Oswald:wght@400;500;700&display=swap"
+    },
+    "colors": {
+      "palette": {
+        "background": {
+          "default": "#050505",
+          "paper": "#0a0a0a",
+          "subtle": "#121212"
+        },
+        "primary": {
+          "DEFAULT": "#10b981",
+          "foreground": "#000000",
+          "glow": "0 0 20px rgba(16, 185, 129, 0.5)"
+        },
+        "secondary": {
+          "DEFAULT": "#eab308",
+          "foreground": "#000000"
+        },
+        "accent": {
+          "DEFAULT": "#ef4444",
+          "foreground": "#ffffff"
+        },
+        "muted": {
+          "DEFAULT": "#27272a",
+          "foreground": "#a1a1aa"
+        },
+        "border": "rgba(255, 255, 255, 0.08)"
+      },
+      "gradients": {
+        "hero": "radial-gradient(circle at center, #10b98120 0%, #050505 70%)",
+        "card_hover": "linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%)"
+      }
+    },
+    "visual_enhancers": {
+      "glassmorphism": {
+        "default": "bg-black/40 backdrop-blur-xl border border-white/10",
+        "heavy": "bg-black/80 backdrop-blur-2xl border border-white/5"
+      },
+      "shadows": {
+        "neon": "0 0 10px rgba(16, 185, 129, 0.3), 0 0 20px rgba(16, 185, 129, 0.1)",
+        "deep": "0 20px 40px -10px rgba(0,0,0,0.8)"
+      },
+      "borders": {
+        "tracing_beam": "relative after:absolute after:inset-0 after:rounded-lg after:p-[1px] after:bg-gradient-to-r after:from-transparent after:via-emerald-500 after:to-transparent after:opacity-50"
+      },
+      "textures": {
+        "noise": "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E\")"
+      }
+    },
+    "layout_strategy": {
+      "grid_system": {
+        "marketing": "grid grid-cols-1 md:grid-cols-12 gap-8",
+        "dashboard": "grid grid-cols-1 md:grid-cols-4 gap-4"
+      },
+      "spacing": {
+        "container_padding": "p-6 md:p-12",
+        "section_gap": "gap-16 md:gap-32"
+      },
+      "containers": {
+        "max_width": "max-w-7xl mx-auto"
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-emerald-500 text-black font-bold uppercase tracking-wider hover:bg-emerald-400 hover:shadow-[0_0_20px_rgba(16,185,129,0.4)] transition-all duration-300 rounded-sm px-8 py-3",
+        "secondary": "bg-transparent border border-white/20 text-white hover:bg-white/5 hover:border-white/40 transition-all duration-300 rounded-sm px-8 py-3",
+        "ghost": "text-zinc-400 hover:text-white transition-colors"
+      },
+      "cards": {
+        "betting_slip": "bg-zinc-900/50 border border-white/10 rounded-lg p-6 relative overflow-hidden hover:border-emerald-500/30 transition-colors",
+        "stat_card": "bg-black/40 backdrop-blur-md border border-white/5 rounded-xl p-6 flex flex-col gap-2"
+      },
+      "inputs": {
+        "default": "bg-zinc-950/50 border-white/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 rounded-md h-12 text-white placeholder:text-zinc-600"
+      }
+    },
+    "motion": {
+      "transitions": {
+        "default": "transition-all duration-300 ease-out",
+        "slow": "transition-all duration-700 ease-in-out"
+      },
+      "animations": {
+        "fade_in": "animate-in fade-in duration-500",
+        "slide_up": "animate-in slide-in-from-bottom-4 duration-500",
+        "pulse_glow": "animate-pulse"
+      }
+    },
+    "media": {
+      "image_urls": {
+        "hero_bg": {
+          "url": "https://images.unsplash.com/photo-1561840883-13989d7a9572?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHxjaW5lbWF0aWMlMjBzbm9va2VyJTIwbWF0Y2glMjBjbG9zZSUyMHVwJTIwZGFyayUyMG1vb2R5fGVufDB8fHx8MTc2NTQwOTQxNnww&ixlib=rb-4.1.0&q=85",
+          "description": "Red balls on green table, cinematic lighting. Use for Landing Page Hero Background with heavy overlay.",
+          "category": "background"
+        },
+        "auth_cover": {
+          "url": "https://images.unsplash.com/photo-1520970192450-03c23cea6b80?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwzfHxjaW5lbWF0aWMlMjBzbm9va2VyJTIwbWF0Y2glMjBjbG9zZSUyMHVwJTIwZGFyayUyMG1vb2R5fGVufDB8fHx8MTc2NTQwOTQxNnww&ixlib=rb-4.1.0&q=85",
+          "description": "Person holding cue stick, moody. Use for Login/Register page side panel.",
+          "category": "hero"
+        },
+        "dashboard_texture": {
+          "url": "https://images.unsplash.com/photo-1636011497948-13d7aaa84f31?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBkYXJrJTIwZ3JlZW4lMjB2ZWx2ZXQlMjB0ZXh0dXJlJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzY1NDA5NDIwfDA&ixlib=rb-4.1.0&q=85",
+          "description": "Green/Black abstract texture. Use for subtle backgrounds in cards or headers.",
+          "category": "texture"
+        },
+        "betting_action": {
+          "url": "https://images.unsplash.com/photo-1761012322191-67444d1133d4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwyfHxiaWxsaWFyZHMlMjBwbGF5ZXIlMjBhaW1pbmclMjBjdWUlMjBzdGljayUyMGRyYW1hdGljJTIwbGlnaHRpbmd8ZW58MHx8fHwxNzY1NDA5NDE3fDA&ixlib=rb-4.1.0&q=85",
+          "description": "Hand holding cue over felt. Use for 'Place Bet' modal or section.",
+          "category": "action"
+        }
+      }
+    },
+    "instructions_to_main_agent": {
+      "setup": [
+        "Install fonts: Add the Google Fonts import to index.css immediately.",
+        "Configure Tailwind: Update tailwind.config.js to use the specific colors (Emerald-500 as primary, Zinc-950 as background).",
+        "Global CSS: Add the noise texture to the body background in index.css."
+      ],
+      "implementation_rules": [
+        "Use 'Oswald' for all headings (h1-h3) and betting odds.",
+        "Use 'Manrope' for all body text and UI labels.",
+        "Use 'JetBrains Mono' for transaction hashes, IDs, and precise timestamps.",
+        "Ensure all cards have a subtle 1px border (white/10) to define edges in the dark theme.",
+        "NEVER use pure black (#000000) for backgrounds; use #050505 or #0a0a0a.",
+        "For the 'Live' indicator, use a pulsing red dot (bg-red-500 animate-pulse).",
+        "Betting inputs must be large and clear (text-2xl or larger)."
+      ]
+    },
+    "universal_guidelines": [
+      "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+      "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+      "Create depth through layered design elements with z-index hierarchy.",
+      "Use glass-morphism effects with backdrop filters (12-24px blur).",
+      "You MUST NOT apply universal transition. Eg: transition: all.",
+      "You MUST NOT center align the app container.",
+      "Always use modern button styles like pill-shaped, or sharp button with interaction animations.",
+      "NEVER: use AI assistant Emoji characters.",
+      "Every interaction needs micro-animations.",
+      "Use 2-3x more spacing than feels comfortable.",
+      "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+      "All interactive and key informational elements MUST include a data-testid attribute."
+    ]
+  }
+}
